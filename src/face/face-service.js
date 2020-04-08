@@ -3,16 +3,16 @@ const FaceService = {
         return knex.select('*').from('faces')
     },
 
-    getFaceById(knex, face_id) {
-        return knex.select('*').from('faces').where('face_id', face_id)
+    getFaceByAge(knex, age) {
+        return knex.select('*').from('faces').where('age', age)
     },
 
-    getFaceByAge(knex, age_group) {
-        return knex.select('*').from('faces').where('age_group', age_group)
+    getFaceByGender(knex, gender) {
+        return knex.select('*').from('faces').where('gender', gender)
     },
 
-    getFaceByGender(knex, gender_id) {
-        return knex.select('*').from('faces').where('gender_id', gender_id)
+    getFaceByBoth(knex, gender, age) {
+        return knex.select('*').from('faces').where('gender', gender).andWhere('age', age)
     },
 }
 

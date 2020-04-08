@@ -18,7 +18,7 @@ app.use(cors())
 app.use(helmet())
 
 //express router
-app.use('/api/faces/', FaceRouter)
+app.use('/api/', FaceRouter)
 
 app.get('/', (req, res) => {
     res.send('Hello, world!')
