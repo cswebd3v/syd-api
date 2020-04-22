@@ -1,26 +1,34 @@
-# Express Boilerplate!
+Save Your Darlings is an app created for writers and world builders, to help them create and visualize their fictional characters.
+![Preview](./src/images/intro.jpg)
+https://syd-client.cswebd3v.now.sh/
 
-This is a boilerplate project used for starting new projects!
+## Summary
 
-## How do set up?
+Users start by selecting a face to work with. Faces can be sorted by gender as well as age group. Depending on the selection, the user can move through multiple pages of faces.
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+In the second section, the user describes their character using a series of questions.
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+Next, the user names their character. They can either supply their own name, or use the name generator that is provided.
 
-## Scripts
+Lastly, the user will save their darling. This will download an image file with all of the compiled information that was put together in the first three steps. It is recommended that the user keeps all of these images in a folder for future reference.
 
-Start the application `npm start`
+## Technologies used
 
-Start nodemon for the application `npm run dev`
+Save Your Darlings has a ReactJS front end, with a Node (express) and PostgreSQL backend.
 
-Run the tests in watch mode `npm test`
+## How to use
 
-## Deploying
+You can either visit the live site at https://syd-client.cswebd3v.now.sh/, or download the repo and run the following:
 
-When your new project is ready for deployment, add a new heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+### `npm start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Tests the endpoints happy-path for connectivity!
+
