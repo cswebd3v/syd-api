@@ -32,3 +32,22 @@ You will also see any lint errors in the console.
 
 Tests the endpoints happy-path for connectivity!
 
+### API Endpoints
+The hosted version of the database can be found at https://floating-beyond-20688.herokuapp.com/
+Use the endpoints below to examine the data
+
+### /api/faces
+
+Returns all face data
+
+### /api/faces/genders/:gender
+
+Returns faces filtered by gender either "Male" "Female" or "All"
+
+### /api/faces/ages/:age
+
+Returns faces filtered by age group either "Young" "Middle" "Old" or "All"
+
+### /api/both/:gender/:age
+
+Use a combination of filters to return specified results such as "Middle" and "Male"
